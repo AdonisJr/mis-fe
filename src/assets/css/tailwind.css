@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  /* For WebKit browsers */
+  ::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Color of the scrollbar handle */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Color when hovering */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Background color of the scrollbar track */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin; /* Makes the scrollbar smaller */
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1); /* Color of the scrollbar handle and track */
+  }
